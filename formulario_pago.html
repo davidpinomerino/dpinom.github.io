@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulario Pago</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function clear() {
+            document.getElementById('nombre').value = '';
+            document.getElementById('apellidos').value = '';
+            document.getElementById('direccion').value = '';
+            document.getElementById('tarjeta').value = '';
+        }
+    </script>
+    <style>
+        body{
+            background-image: url(../proyecto_bien/images/loggin.jpg);
+            background-repeat: no-repeat;
+        }
+        div.formulario form{
+            height: 24pc;
+        }
+    </style>
+</head>
+<body>
+    <div class="formulario-exterior">
+        <div class="formulario">
+            <form action="#">
+                <p> Nombre </p>
+                <input type="text" id="nombre"> <br>
+                <p> Apellidos </p>
+                <input type="text" id="apellidos"> <br>
+                <p> Direcci&oacute;n </p>
+                <input type="text" id="direccion"> <br>
+                <p> N&uacute;mero tarjeta </p>
+                <input type="text" id="tarjeta"> <br> <br>
+                <button> Pagar </button>
+                <button onclick="clear()"> Limpiar </button>
+                <button> <a href="./index.html"> Volver al inicio </a> </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
